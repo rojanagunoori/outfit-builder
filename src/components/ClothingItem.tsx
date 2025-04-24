@@ -1,10 +1,10 @@
 // components/ClothingItem.tsx
 'use client';
-import Image from 'next/image';
+//import Image from 'next/image';
 
 export default function ClothingItem({ type }: { type: string }) {
   return (
-    <Image  width={500} height={300} 
+    <img //Image  width={500} height={300} 
     src={`/icons/${type}.png`}
     alt={type}
     draggable

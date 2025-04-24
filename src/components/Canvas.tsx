@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import { useCart } from '../context/CartContext';
 import Cart from './Cart';
 import html2canvas from 'html2canvas';
-import Image from 'next/image';
+//import Image from 'next/image';
 
 interface Item {
   id: number;
@@ -112,7 +112,7 @@ export default function Canvas() {
           style={{ top: item.y, left: item.x }}
           className="absolute"
         >
-          <Image  width={500} height={300}  
+          <img  //width={500} height={300}  
             src={`/icons/${item.type}.png`}
             alt={item.type}
             className="w-12 h-12 cursor-grab"

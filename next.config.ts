@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // <- this replaces the old export command
+  trailingSlash: true, // optional but often helps with static routing
 };
 
-export default nextConfig;
+module.exports = nextConfig;
